@@ -11,5 +11,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Build & deploy
-        run: ng deploy --base-href=/perruche/
+      - name: Install, build & deploy
+        run: npm ci && ng deploy --base-href=/perruche/ --repo=https://github.com/vladtheimpala/perruche.git --name="vladtheimpala" --email=negus1309@gmail.com
