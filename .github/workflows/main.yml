@@ -14,4 +14,4 @@ jobs:
       - name: Install, build & deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: npm ci && npm run-script ng deploy --base-href=/perruche/ --repo=https://github.com/vladtheimpala/perruche.git --name="vladtheimpala" --email=negus1309@gmail.com
+        run: npm ci && npm run ng -- deploy --base-href=/perruche/ --repo=https://github.com/vladtheimpala/perruche.git --name="vladtheimpala" --email=negus1309@gmail.com
